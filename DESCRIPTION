@@ -1,0 +1,22 @@
+Package: Interactions
+Type: Package
+Title: Plotting Marginal Effects of Regression Models
+Version: 0.1.0
+Author: Kirill Kalinin
+Maintainer: The package maintainer <kkalinin@umich.edu>
+Description: This package facilitates the estimation and visualization of marginal effects in complex scenarios by directly utilizing the variance-covariance matrix, rather than relying on the model object. Moreover, it offers flexibility by enabling the inclusion of multi-way interaction effects. The algorithm further allows users to specify the range of values for the variables of interest in the partial derivative of the regression equation.
+Encoding: UTF-8
+LazyData: true
+Imports:
+      Amelia,
+      mitools,
+      foreign,
+      plm,
+      ggplot2,
+Suggests:
+      testthat (>= 2.1.0),
+      knitr,
+      rmarkdown
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+RoxygenNote: 7.2.3
